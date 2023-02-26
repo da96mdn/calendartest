@@ -1,0 +1,39 @@
+###  Find All Content
+GET http://localhost:8080/api/content
+
+
+###  Get Content by Id
+GET http://localhost:8080/api/content/1
+
+### Create new Content
+ POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "title": "Fourth Content",
+  "desc": "Desc",
+  "status": "IN_PROGRESS",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-02-23T00:12:29.2603051",
+  "dateUpdated": "2023-02-23T00:12:29.2603051",
+  "url": "https://www.google.com"
+}
+
+
+### Update existing Content
+ PUT http://localhost:8080/api/content/145
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Fifth Content",
+  "desc": "Desc",
+  "status": "IN_PROGRESS",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-02-23T00:12:29.2603051",
+  "dateUpdated": "2023-02-23T00:12:29.2603051",
+  "url": "https://www.google.com"
+}
+
+### Update existing Content
+DELETE http://localhost:8080/api/content/2
